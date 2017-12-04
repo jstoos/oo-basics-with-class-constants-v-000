@@ -4,7 +4,7 @@ class Shoe
 
   BRANDS = []
 
-  def initialize(brand, list = [])
+  def initialize(brand, list = [BRANDS])
     @brand = brand
     if list.count == 0
         list << brand
