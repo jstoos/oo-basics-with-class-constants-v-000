@@ -7,7 +7,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     brands = BRANDS.join
-    if BRANDS.match(/#{brand}/) == nil
+    if brands.match(/#{brand}/) == nil
       BRANDS << brand
     end
   end
