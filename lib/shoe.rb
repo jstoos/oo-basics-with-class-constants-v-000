@@ -13,9 +13,9 @@ class Shoe
         if b != brand
           list << brand
         end
-        BRAND = list
       end
     end
+    BRAND = list
   end
 
   BRANDS.all? do |b|
