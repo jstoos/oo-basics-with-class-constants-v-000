@@ -4,7 +4,7 @@ class Shoe
 
   BRANDS = []
 
-  def initialize(brand, list=BRANDS)
+  def initialize(brand, list=[])
     @brand = brand
     list.each do |b|
       if b != brand
