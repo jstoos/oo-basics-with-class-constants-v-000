@@ -4,25 +4,20 @@ class Shoe
 
   BRANDS = []
 
-  def initialize(brand, list=[])
+  def initialize(brand, BRANDS)
     @brand = brand
-    if list.count == 0
-        list << brand
-    elsif list.lenght > 0
-      list.all? do |b|
+    if BRANDS.count == 0
+        BRANDS << brand
+    elsif BRANDS.count > 0
+      BRANDS.all? do |b|
         if b != brand
-          list << brand
+          BRANDS << brand
         end
       end
     end
-    BRANDS = list
   end
 
-  BRANDS.all? do |b|
-    if b != brand
-      BRANDS << brand
-    end
-  end
+
 
   def cobble
     self.condition = "new"
