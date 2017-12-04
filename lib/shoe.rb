@@ -11,8 +11,9 @@ class Shoe
     elsif list.lenght > 0
       list.all? do |b|
         if b != brand
-          BRAND << brand
+          list << brand
         end
+        BRAND = list
       end
     end
   end
