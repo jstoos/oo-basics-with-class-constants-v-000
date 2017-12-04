@@ -4,14 +4,9 @@ class Shoe
 
   BRANDS = []
 
-  def initialize(brand, list = [BRANDS])
+  def initialize(brand)
     @brand = brand
-    if list.count == 0
-        list << brand
-    elsif list.count > 0
-      list.all? do |b|
-        if b != brand
-          list << brand
+    BRANDS << brand
         end
       end
     end
