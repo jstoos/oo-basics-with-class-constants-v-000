@@ -6,7 +6,7 @@ class Shoe
 
   def initialize(brand, list=[])
     @brand = brand
-    if list.count = 0
+    if list.count == 0
         list << brand
     elsif list.lenght > 0
       list.all? do |b|
