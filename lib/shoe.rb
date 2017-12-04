@@ -15,7 +15,7 @@ class Shoe
         end
       end
     end
-    BRAND = list
+    BRANDS = list
   end
 
   BRANDS.all? do |b|
