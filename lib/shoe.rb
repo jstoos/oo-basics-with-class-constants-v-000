@@ -4,7 +4,7 @@ class Shoe
 
   BRANDS = []
 
-  def initialize(list=[BRANDS], brand)
+  def initialize(rand, list=[BRANDS])
     @brand = brand
     BRANDS.all? do |b|
       if b != brand
