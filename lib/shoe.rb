@@ -4,13 +4,12 @@ class Shoe
 
   BRANDS = []
 
-  def initialize(brand, list=[])
+  def initialize(brand)
     @brand = brand
-    list.each do |b|
+    BRAND.each do |b|
       if b != brand
-        list << brand
+        BRAND << brand
       end
-      BRANDS = list
     end
   end
 
