@@ -8,8 +8,9 @@ class Shoe
     @brand = brand
     list.each do |b|
       if b != brand
-        BRANDS << brand
+        list << brand
       end
+      BRANDS = list
     end
   end
 
